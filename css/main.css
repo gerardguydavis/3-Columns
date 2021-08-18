@@ -7,6 +7,7 @@
 }
 #sedans button:hover {
   background-color: #E28625;
+  color: #fff;
 }
 
 #suvs {
@@ -17,6 +18,7 @@
 }
 #suvs button:hover {
   background-color: #006971;
+  color: #fff;
 }
 
 #luxury {
@@ -27,6 +29,7 @@
 }
 #luxury button:hover {
   background-color: #004140;
+  color: #fff;
 }
 
 .card {
@@ -74,7 +77,6 @@ button {
 button:hover {
   transition: 0.2s;
   cursor: pointer;
-  color: #fff;
 }
 
 @media only screen and (min-width: 1024px) {
