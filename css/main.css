@@ -1,135 +1,80 @@
 @import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
 #sedans {
-  width: 327px;
-  font-family: "Lexend Deca", sans-serif;
-  color: #fff;
   background-color: #E28625;
 }
-#sedans img {
-  margin: 0;
-}
-#sedans h2 {
-  font-family: "Big Shoulders Display", sans-serif;
-  text-transform: uppercase;
-  font-size: 40px;
-  margin: 25px 0;
-}
-#sedans p {
-  line-height: 25px;
-  font-size: 15px;
-  margin-bottom: 80px;
-}
 #sedans button {
-  background-color: #fff;
-  font-family: "Lexend Deca", sans-serif;
-  border: none;
-  width: 146px;
-  height: 48px;
-  border-radius: 25px;
-  border: solid 2px #fff;
   color: #E28625;
 }
 #sedans button:hover {
-  color: #fff;
   background-color: #E28625;
-  transition: 0.2s;
-  cursor: pointer;
-}
-#sedans:first-child {
-  border-radius: 8px 8px 0 0;
-}
-#sedans:last-child {
-  border-radius: 0 0 8px 8px;
 }
 
 #suvs {
-  width: 327px;
-  font-family: "Lexend Deca", sans-serif;
-  color: #fff;
   background-color: #006971;
 }
-#suvs img {
-  margin: 0;
-}
-#suvs h2 {
-  font-family: "Big Shoulders Display", sans-serif;
-  text-transform: uppercase;
-  font-size: 40px;
-  margin: 25px 0;
-}
-#suvs p {
-  line-height: 25px;
-  font-size: 15px;
-  margin-bottom: 80px;
-}
 #suvs button {
-  background-color: #fff;
-  font-family: "Lexend Deca", sans-serif;
-  border: none;
-  width: 146px;
-  height: 48px;
-  border-radius: 25px;
-  border: solid 2px #fff;
   color: #006971;
 }
 #suvs button:hover {
-  color: #fff;
   background-color: #006971;
-  transition: 0.2s;
-  cursor: pointer;
-}
-#suvs:first-child {
-  border-radius: 8px 8px 0 0;
-}
-#suvs:last-child {
-  border-radius: 0 0 8px 8px;
 }
 
 #luxury {
-  width: 327px;
-  font-family: "Lexend Deca", sans-serif;
-  color: #fff;
   background-color: #004140;
 }
-#luxury img {
-  margin: 0;
-}
-#luxury h2 {
-  font-family: "Big Shoulders Display", sans-serif;
-  text-transform: uppercase;
-  font-size: 40px;
-  margin: 25px 0;
-}
-#luxury p {
-  line-height: 25px;
-  font-size: 15px;
-  margin-bottom: 80px;
-}
 #luxury button {
-  background-color: #fff;
-  font-family: "Lexend Deca", sans-serif;
-  border: none;
-  width: 146px;
-  height: 48px;
-  border-radius: 25px;
-  border: solid 2px #fff;
   color: #004140;
 }
 #luxury button:hover {
-  color: #fff;
   background-color: #004140;
-  transition: 0.2s;
-  cursor: pointer;
 }
-#luxury:first-child {
+
+.card {
+  width: 327px;
+  font-family: "Lexend Deca", sans-serif;
+  color: #fff;
+}
+.card:first-child {
   border-radius: 8px 8px 0 0;
 }
-#luxury:last-child {
+.card:last-child {
   border-radius: 0 0 8px 8px;
 }
 
 .card-wrapper {
   padding: 48px;
+}
+
+img {
+  margin: 0;
+}
+
+h2 {
+  font-family: "Big Shoulders Display", sans-serif;
+  text-transform: uppercase;
+  font-size: 40px;
+  margin: 25px 0;
+}
+
+p {
+  line-height: 25px;
+  font-size: 15px;
+  margin-bottom: 80px;
+}
+
+button {
+  background-color: #fff;
+  font-family: "Lexend Deca", sans-serif;
+  border: none;
+  width: 146px;
+  height: 48px;
+  border-radius: 25px;
+  border: solid 2px #fff;
+}
+button:hover {
+  transition: 0.2s;
+  cursor: pointer;
+  color: #fff;
 }
 
 @media only screen and (min-width: 1024px) {
@@ -140,33 +85,13 @@
     padding: 10% 0;
   }
 
-  #sedans {
+  .card {
     width: 307px;
   }
-  #sedans:first-child {
+  .card:first-child {
     border-radius: 8px 0 0 8px;
   }
-  #sedans:last-child {
-    border-radius: 0 8px 8px 0;
-  }
-
-  #suvs {
-    width: 307px;
-  }
-  #suvs:first-child {
-    border-radius: 8px 0 0 8px;
-  }
-  #suvs:last-child {
-    border-radius: 0 8px 8px 0;
-  }
-
-  #luxury {
-    width: 307px;
-  }
-  #luxury:first-child {
-    border-radius: 8px 0 0 8px;
-  }
-  #luxury:last-child {
+  .card:last-child {
     border-radius: 0 8px 8px 0;
   }
 }

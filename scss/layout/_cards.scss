@@ -4,52 +4,65 @@
 
 @each $car, $color in $car-list {
     ##{$car} {
-        width: 327px;
-        font-family: 'Lexend Deca', sans-serif;
-        color: #fff;
-        img {
-            margin: 0;
-        }
-        h2 {
-            font-family: "Big Shoulders Display", sans-serif;
-            text-transform: uppercase;
-            font-size: 40px;
-            margin: 25px 0;
-        }
-        p {
-            line-height: 25px;
-            font-size: 15px;
-            margin-bottom: 80px;
-        }
+        background-color: $color;
         button {
-            background-color: #fff;
-            font-family: "Lexend Deca", sans-serif;
-            border: none;
-            width: 146px;
-            height: 48px;
-            border-radius: 25px;
-            border: solid 2px #fff;
             color: $color;
             &:hover {
-                color: #fff;
                 background-color: $color;
-                transition: .2s;
-                cursor: pointer;
             }
         }
-        &:first-child {
-            border-radius: 8px 8px 0 0;
-        }
-        &:last-child {
-            border-radius: 0 0 8px 8px;
-        }
-        background-color: $color;
+    }
+}
+
+.card {
+    width: 327px;
+    font-family: 'Lexend Deca', sans-serif;
+    color: #fff;
+    &:first-child {
+    border-radius: 8px 8px 0 0;
+    }
+    &:last-child {
+    border-radius: 0 0 8px 8px;
     }
 }
 
 .card-wrapper {
     padding: 48px;
 }
+
+
+img {
+    margin: 0;
+}
+
+h2 {
+    font-family: "Big Shoulders Display", sans-serif;
+    text-transform: uppercase;
+    font-size: 40px;
+    margin: 25px 0;
+}
+
+p {
+    line-height: 25px;
+    font-size: 15px;
+    margin-bottom: 80px;
+}
+
+button {
+    background-color: #fff;
+    font-family: "Lexend Deca", sans-serif;
+    border: none;
+    width: 146px;
+    height: 48px;
+    border-radius: 25px;
+    border: solid 2px #fff;
+    &:hover {
+        transition: .2s;
+        cursor: pointer;
+        color: #fff;
+    }
+}
+
 
 @media only screen and (min-width: 1024px) {
 
@@ -60,8 +73,7 @@
         padding: 10% 0;
     }
     
-    @each $car, $color in $car-list {
-        ##{$car} {
+    .card {
         width: 307px;
         &:first-child {
             border-radius: 8px 0 0 8px;
@@ -70,5 +82,4 @@
             border-radius: 0 8px 8px 0;
         }
     }
-}
 }
