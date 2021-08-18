@@ -21,6 +21,22 @@
             font-size: 15px;
             margin-bottom: 80px;
         }
+        button {
+            background-color: #fff;
+            font-family: "Lexend Deca", sans-serif;
+            border: none;
+            width: 146px;
+            height: 48px;
+            border-radius: 25px;
+            border: solid 2px #fff;
+            color: $color;
+            &:hover {
+                color: #fff;
+                background-color: $color;
+                transition: .2s;
+                cursor: pointer;
+            }
+        }
         &:first-child {
             border-radius: 8px 8px 0 0;
         }
